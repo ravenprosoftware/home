@@ -2,127 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Software Consulting | Your Company</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      background-color: #f9fafb;
-      color: #333;
-    }
-
-    header {
-      background-color: #1e40af;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    nav {
-      margin-top: 1rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 3rem 1rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      margin-bottom: 1.5rem;
-      font-size: 1.8rem;
-      color: #1e3a8a;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
-
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-color: #e5e7eb;
-      font-size: 0.9rem;
-      color: #555;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-
-      nav a {
-        display: block;
-        margin: 0.5rem 0;
-      }
-
-      section {
-        padding: 2rem 1rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RavenPro Software Consulting</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
-    <h1>Your Company</h1>
-    <p>Expert Software Consulting for Business Growth</p>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
+      <h1>RavenPro</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Custom Software Development</h3>
-        <p>We build scalable, secure software tailored to your needs using modern tech stacks.</p>
-      </div>
-      <div class="card">
-        <h3>Cloud Architecture</h3>
-        <p>Design and migrate to reliable cloud solutions with AWS, Azure, or Google Cloud.</p>
-      </div>
-      <div class="card">
-        <h3>Tech Strategy Consulting</h3>
-        <p>Get expert advice on architecture, process automation, and digital transformation.</p>
-      </div>
+  <section class="hero">
+    <div class="container">
+      <h2>Empowering Software Solutions</h2>
+      <p>Custom software consulting that scales with your business.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
     </div>
   </section>
 
   <section id="about">
-    <h2>About Us</h2>
-    <p>We are a team of senior software engineers and architects passionate about solving complex problems with clean, effective code. With 10+ years of industry experience, we help startups and enterprises build the right tech the first time.</p>
+    <div class="container grid">
+      <img src="assets/about.jpg" alt="About Us" />
+      <div>
+        <h3>About Us</h3>
+        <p>RavenPro is a cutting-edge software consulting company helping startups and enterprises scale with robust, secure, and efficient solutions.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
+  <section id="services">
+    <div class="container">
+      <h3>Our Services</h3>
+      <div class="grid services">
+        <div class="card">
+          <img src="assets/services.jpg" alt="Custom Software" />
+          <h4>Custom Software Development</h4>
+          <p>We build scalable and secure applications tailored to your business needs.</p>
+        </div>
+        <div class="card">
+          <img src="assets/services.jpg" alt="Cloud Consulting" />
+          <h4>Cloud Consulting</h4>
+          <p>We help you migrate, scale, and secure your infrastructure in the cloud.</p>
+        </div>
+        <div class="card">
+          <img src="assets/services.jpg" alt="DevOps & Automation" />
+          <h4>DevOps & Automation</h4>
+          <p>Boost your team's productivity with CI/CD pipelines and infrastructure automation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h3>Contact Us</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="How can we help you?" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 RavenPro Software Consulting. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
